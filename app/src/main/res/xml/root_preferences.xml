@@ -66,7 +66,7 @@
 
         <Preference
             app:key="pref_help"
-            app:title="Help & Support"
+            app:title="Help &amp; Support"
             app:icon="@drawable/ic_help" />
 
         <Preference
