@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Toolbar is handled by the Fragment's layout -->
+
+    <PreferenceCategory
+        app:title="Account"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:key="pref_profile"
+            app:title="Profile Information"
+            app:icon="@drawable/ic_person" />
+        <Preference
+            app:key="pref_subscription"
+            app:title="Manage Subscription"
+            app:icon="@drawable/ic_workspace_premium" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Audio"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:key="pref_equalizer"
+            app:title="Equalizer"
+            app:icon="@drawable/ic_equalizer" />
+
+        <ListPreference
+            app:key="pref_playback_quality"
+            app:title="Playback Quality"
+            app:icon="@drawable/ic_high_quality"
+            app:summary="Automatic"
+            app:entries="@array/playback_quality_entries"
+            app:entryValues="@array/playback_quality_values"
+            app:defaultValue="auto" />
+
+        <SwitchPreferenceCompat
+            app:key="pref_crossfade"
+            app:title="Crossfade"
+            app:icon="@drawable/ic_sync_alt"
+            app:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            app:key="pref_gapless"
+            app:title="Gapless Playback"
+            app:icon="@drawable/ic_skip_next"
+            app:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Device"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:key="pref_scan"
+            app:title="Scan Music"
+            app:icon="@drawable/ic_scan_music" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="About"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:key="pref_help"
+            app:title="Help & Support"
+            app:icon="@drawable/ic_help" />
+
+        <Preference
+            app:key="pref_privacy"
+            app:title="Privacy Policy"
+            app:icon="@drawable/ic_privacy_tip" />
+
+        <Preference
+            app:key="pref_terms"
+            app:title="Terms of Service"
+            app:icon="@drawable/ic_gavel" />
+    </PreferenceCategory>
+
+    <!-- Log Out Button -->
+    <Preference
+        app:key="pref_logout"
+        app:title="Log Out"
+        app:layout="@layout/preference_logout_button" />
+</PreferenceScreen>

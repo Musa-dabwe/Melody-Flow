@@ -835,7 +835,7 @@ This document provides a step-by-step guide to building the Melody Flow Android 
                     app:key="pref_terms"
                     app:title="Terms of Service"
                     app:icon="@drawable/ic_gavel" />
-            </EOM>
+            </PreferenceCategory>
             <!-- Log Out Button -->
             <Preference
                 app:key="pref_logout"

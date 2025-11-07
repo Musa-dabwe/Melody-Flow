@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/playlistFragment">
+
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.musa.melodyflow.ui.playlist.PlaylistFragment"
+        android:label="fragment_playlist"
+        tools:layout="@layout/fragment_playlist" />
+    <fragment
+        android:id="@+id/nowPlayingFragment"
+        android:name="com.musa.melodyflow.ui.nowplaying.NowPlayingFragment"
+        android:label="fragment_now_playing"
+        tools:layout="@layout/fragment_now_playing" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.musa.melodyflow.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@xml/root_preferences" />
+</navigation>
