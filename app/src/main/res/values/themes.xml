@@ -1,9 +1,30 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-  <!-- Base application theme. -->
-  <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
-    <!-- Customize your theme here. -->
-    <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-  </style>
+    <!-- Base application theme. -->
+    <style name="Theme.MelodyFlow" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Font -->
+        <item name="android:fontFamily">@font/spline_sans_font_family</item>
+        <item name="fontFamily">@font/spline_sans_font_family</item>
 
-  <style name="AppTheme" parent="Base.AppTheme" />
+        <!-- Dark Theme Colors -->
+        <item name="colorPrimary">@color/md_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_dark_onPrimary</item>
+        <item name="android:colorBackground">@color/md_dark_background</item>
+        <item name="colorOnBackground">@color/md_dark_onBackground</item>
+        <item name="colorSurface">@color/md_dark_surface</item>
+        <item name="colorOnSurface">@color/md_dark_onSurface</item>
+        <item name="android:textColorSecondary">@color/md_dark_textSecondary</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/md_dark_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="M">false</item>
+    </style>
+
+    <!-- Specific theme for Settings to match mockup -->
+    <style name="Theme.MelodyFlow.Settings" parent="Theme.MelodyFlow">
+        <item name="android:colorBackground">#111111</item>
+        <item name="colorSurface">@color/settings_container_bg_dark</item>
+        <item name="colorPrimary">@color/md_dark_onBackground</item> <!-- White text -->
+        <item name="colorAccent">@color/settings_accent_red</item>
+        <item name="android:textColorSecondary">@color/md_dark_textSecondary</item>
+    </style>
 </resources>
